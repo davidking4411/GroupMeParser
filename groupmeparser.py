@@ -32,7 +32,6 @@ for message in messages:
 print('Total number of messages:', namelist.shape[0])
 unique_elements, counts_elements = np.unique(namelist, return_counts=True)
 name_dict = dict(zip(unique_elements,counts_elements))
-print(name_dict)
 name_listsorted = sorted(name_dict.items(), key=operator.itemgetter(1))
 name_dictsorted ={}
 name_dictsorted = Convert(name_listsorted,name_dictsorted)
